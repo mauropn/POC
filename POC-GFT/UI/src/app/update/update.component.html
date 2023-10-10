@@ -1,0 +1,17 @@
+<p>Alteração da Ordem</p>
+<div class="div-box">
+    <form [formGroup]="formOrdem" (ngSubmit)="onSubmit()">
+        <section>
+            <mat-form-field>
+                <mat-label>Nome da Ordem</mat-label>
+                <input matInput maxlength="10" formControlName="OrderName">
+            </mat-form-field>
+        </section>
+        <section>
+            <mat-slide-toggle color="primary" formControlName="Ativo">Ativo?</mat-slide-toggle>
+        </section>
+        <section class="submit">
+            <button type="submit" mat-raised-button color="primary" (submit)="onSubmit">Salvar</button>
+        </section>
+    </form>
+</div>

@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ApplicationServiceRegistration.cs~RF1cc7a62.TMP" />
+    <None Remove="Contracts\Persistence\IOrderRepository.cs~RF15d6c83.TMP" />
+    <None Remove="Contracts\Persistence\IOrderRepository.cs~RF1c6f0a9.TMP" />
+    <None Remove="Exceptions\NotFoundException.cs~RF15b1797.TMP" />
+    <None Remove="Features\Commands\CreateOrderCommand\CreateOrderCommand.cs~RF17b4a25.TMP" />
+    <None Remove="Features\Commands\CreateOrderCommand\CreateOrderCommandValidator.cs~RFf2aa7b7.TMP" />
+    <None Remove="Features\Commands\UpdateOrderCommand\UpdateOrderCommand.cs~RF1228c3f.TMP" />
+    <None Remove="Features\Queries\GetAllOrdersFromQueue\GetOrdersFromQueueQuery.cs~RF5be1b88.TMP" />
+    <None Remove="Features\Queries\GetAllOrdersFromQueue\GetOrdersFromQueueQuery.cs~RFf255913.TMP" />
+    <None Remove="Features\Queries\GetOrderByCodigo\GetOrderByCodigoQueueQuery.cs~RF2161af5.TMP" />
+    <None Remove="Features\Queries\GetOrderByCodigo\OrderByCodigoDTO.cs~RF215e994.TMP" />
+    <None Remove="Features\Queries\OrderDTO.cs~RF2028d67.TMP" />
+    <None Remove="Profiles\OrderProfile.cs~RF1a20751.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>
